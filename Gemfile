@@ -7,6 +7,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 
 gem 'bcrypt', '3.1.13'
 gem 'bootsnap', '1.4.5', require: false
+gem 'devise', '4.7.1'
 gem 'image_processing', '1.10.0'
 gem 'jbuilder', '2.9.1'
 gem 'pg', '1.1.4'
