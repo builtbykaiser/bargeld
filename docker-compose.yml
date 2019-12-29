@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:9.5'
+    environment:
+      POSTGRES_USER: bargeld
+      POSTGRES_PASSWORD: 54LSFR6CSrJ-THRZEtBg3Q
+    ports:
+      - '59788:5432'
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+
+  redis:
+    image: 'redis:5.0-alpine'
+    command: redis-server
+    ports:
+      - '59789:6379'
+    volumes:
+      - 'redis:/var/lib/redis/data'
+
+volumes:
+  postgres:
+  redis:
