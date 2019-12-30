@@ -7,12 +7,9 @@ html
 
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    script src="https://use.fontawesome.com/ca8bda1401.js"
 
-  body
-
-    p.notice
-      = notice
-    p.alert
-      = alert
+  body.bg-gray-200
+    div.flex.bg-primary-dark.h-2
 
     = yield

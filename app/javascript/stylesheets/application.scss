@@ -2,4 +2,18 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "buttons"
+$primary: #ff6347;
+
+@import "buttons";
+
+body {
+  color: #38374d;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-primary-dark {
+  background-color: darken($primary, 5);
+}
